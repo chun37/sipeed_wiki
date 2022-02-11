@@ -1,0 +1,796 @@
+<!-- 
+    Sipeed Wiki 官方首页，包含了各种产品介绍和文档
+    首页修改指南： 
+        添加或修改产品卡片只需要修改 products 变量
+        修改或这添加翻译，只需要修改 messages 变量
+        保存此文件后如果需要立刻看到使用了这个模板的文件的效果，可以打开那个文件保存一次就会触发 teedoc 构建,
+        比如 README.md 使用了此layout，要想此修改生效，转到 README.md 按 Ctrl+S 保存一次 README.md 即可
+ -->
+
+<!DOCTYPE html>
+<html lang="zh-CN"  id="home"  class=" md_page "  layout="home" >
+<head>
+     
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="sipeed,  sipeed官方,  wiki,  文档,  开源软件,  开源硬件,  Lichee,  荔枝派,  AI,  AIOT,  边缘计算,  人脸识别,  嵌入式AI,  maixpy,  maixpy3,  Longan,  Tang, ">
+        <meta name="description" content="Sipeed的官方文档（Wiki），包含了开源软件和开源硬件资料，AIOT资料等等">
+        <meta name="generator" content="teedoc">
+        <meta name="theme" content="teedoc-plugin-theme-default">
+    
+     
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser"><script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><meta name="html-generator" content="teedoc-plugin-jupyter-notebook-parser"><link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/><link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/><link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/><link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/><script src="/static/js/theme_default/split.js"></script><script src="/static/js/theme_default/jquery.min.js"></script><script src="/static/js/theme_default/pre_main.js"></script><link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9cb07365544a53067c56c346c838181a";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119047820-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', 'UA-119047820-5');
+    </script><link rel="stylesheet" href="/static/css/gitalk/gitalk.css" type="text/css"/><link rel="stylesheet" href="/static/css/gitalk/custom_gitalk.css" type="text/css"/><link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+    
+    
+        <title>文档和资料 - Sipeed Wiki</title>
+    
+    
+    
+    <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"bg_color": "#ffcf89", "bg_color_hover": "#f57c00", "close_color": "#eab971", "color": "#a0421d", "color_hover": "white", "content": "2022\u5e74 Sipeed \u5f00\u6e90\u793e\u533a \u003ca target=\"_blank\" href=\"https://wiki.sipeed.com/soft/maixpy3/zh/index.html\"\u003eMaixPy3\u003c/a\u003e \u6b63\u5f0f\u7248\u66f4\u65b0\uff01\u5168\u65b0\u7684\u4ea7\u54c1\u4f53\u9a8c\uff01 \u003cbr\u003e \u8be6\u7ec6 AI \u6a21\u578b\u8bad\u7ec3\u65b9\u6cd5\uff01\u5feb\u6765\u770b\u770b\u5b83\u6709\u4ec0\u4e48\u4e0d\u540c\u5427\uff01", "date": "2021-11-19 14:00:00", "label": "\u65b0", "link_bg_color": "#e6ae5c", "link_color": "#e53935", "show_after_s": 432000, "show_times": 2, "type": "new"}}</script>
+</head>
+<body class="type_page">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                    <img class="site_logo" src="/static/image/logo.svg" alt="sipeed wiki logo">
+                
+                
+                    <h2>wiki</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class="active"><a  href="/">首页</a></li>
+<li class=""><a target="_blank" href="https://www.sipeed.com">矽速官网</a></li>
+<li class="sub_items "><a >开源软件</a><ul><li class=""><a  href="/soft/maixpy/zh/index.html">MaixPy</a></li>
+<li class=""><a  href="/soft/maixpy3/zh/index.html">MaixPy3</a></li>
+<li class=""><a  href="/soft/maixduino/zh/index.html">MaixDuino</a></li>
+<li class=""><a  href="/soft/Lichee/zh/index.html">Lichee</a></li>
+<li class=""><a  href="/soft/longan/zh/index.html">Longan</a></li>
+<li class=""><a  href="/soft/Tang/zh/index_bak.html">Tang</a></li>
+</ul>
+</li>
+<li class="sub_items "><a >开源硬件</a><ul><li class=""><a  href="/hardware/zh/maix/index.html">Maix-I</a></li>
+<li class=""><a  href="/hardware/zh/maixII/index.html">Maix-II</a></li>
+<li class=""><a  href="/hardware/zh/lichee/index.html">Lichee Pi</a></li>
+<li class=""><a  href="/hardware/zh/tang/index.html">Tang</a></li>
+<li class=""><a  href="/hardware/zh/longan/Nano/Longan_nano.html">Longan</a></li>
+<li class=""><a  href="/hardware/zh/modules_spmod/spmod_extender.html">SP-Mod</a></li>
+</ul>
+</li>
+<li class="sub_items "><a >商业产品</a><ul><li class=""><a  href="/hardware/maixface/zh/">Maix Face</a></li>
+</ul>
+</li>
+<li class="sub_items "><a >云平台</a><ul><li class=""><a target="_blank" href="https://www.maixhub.com">Maixhub 模型训练平台</a></li>
+<li class=""><a target="_blank" href="https://www.maixhub.com/onlinecompiler">固件在线编译</a></li>
+</ul>
+</li>
+<li class=""><a  href="/community.html">社区</a></li>
+<li class=""><a  href="/store.html">商城</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a  href="https://github.com/sipeed">Github </a></li>
+<li class="sub_items "><a  href="">Language: 中文 简体</a><ul><li class=""><a  href="/en/">English</a></li>
+<li class="active"><a  href="/">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="google_translate_element"><img class="icon" src="/static/image/google_translate/translate.svg"/>Translate</a></li></ul><ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="page_wrapper">
+        <div id="page_content">
+            <div>
+                
+
+<script src="/static/js/vue.js"></script>
+<script src="/static/js/vue_i18n.js"></script>
+
+<div id="products">
+    <h1>{[ $t("Sipeed Wiki") ]}</h1>
+    <ul>
+        <li v-for="product in products" v-bind:style="{ backgroundColor: product.bg }">
+            <div class="video_wrapper" v-if="product.video">
+                <video class="video_player" v-bind:src="product.video" v-bind:poster="product.img" preload muted autoplay loop="-1" x5-playsinline="" x5-video-player-fullscreen="true" playsinline="" webkit-playsinline="" x5-video-player-type="h5" >
+                    Your brower not support video play!
+                </video>
+                <div class="play_mask" v-on:click="playVideo"></div>
+            </div>
+            <img v-else v-bind:src="product.img">
+            <div class="product_info">
+                <div class="product_head">
+                    <div class="product_head_content">
+                        <h2>{[ $t(product.title) ]}</h2>
+                        <div>
+                            {[ $t(product.brief) ]}
+                        </div>
+                    </div>
+                </div>
+                <div class="product_body" v-if="product.left && product.right">
+                    <ul class="left">
+                        <li class="left_lable category" v-if="product.left_label"><h3>{[ $t(product.left_label) ]}</h3></li>
+                        <li class="info_item" v-for="left in product.left">
+                            <a v-bind:href="$t(left.url)" v-new-tab="left.new_tab">
+                                <h3 class="title">{[ $t(left.name) ]}</h3>
+                                <span class="brief">{[ $t(left.brief) ]}</span>
+                            </a>
+                            <span v-if="typeof(left.new)=='string' && left.new != ''" class="new_with_info" v-on:click="newInfo"><span class="new_info">{[ left.new ]}</span></span>
+                            <span v-else-if="left.new" class="new"></span>
+                        </li>
+                    </ul>
+                    <ul class="right">
+                        <li class="right_lable category" v-if="product.right_label"><h3>{[ $t(product.right_label) ]}</h3></li>
+                        <li class="info_item" v-for="right in product.right">
+                            <a v-bind:href="$t(right.url)" v-new-tab="right.new_tab">
+                                <h3 class="title">{[ $t(right.name) ]}</h3>
+                                <span class="brief">{[ $t(right.brief) ]}</span>
+                            </a>
+                            <span v-if="typeof(right.new)=='string' && right.new != ''" class="new_with_info" v-on:click="newInfo"><span class="new_info">{[ right.new ]}</span></span>
+                            <span v-else-if="right.new" class="new"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div v-else class="product_body product_body_single">
+                    <ul v-if="product.left" class="left">
+                        <li class="left_lable category" v-if="product.left_label"><h3>{[ $t(product.left_label) ]}</h3></li>
+                        <li class="info_item" v-for="left in product.left">
+                            <a v-bind:href="$t(left.url)" v-new-tab="left.new_tab">
+                                <h3 class="title">{[ $t(left.name) ]}</h3>
+                                <span class="brief">{[ $t(left.brief) ]}</span>
+                            </a>
+                            <span v-if="typeof(left.new)=='string' && left.new != ''" class="new_with_info" v-on:click="newInfo"><span class="new_info">{[ left.new ]}</span></span>
+                            <span v-else-if="left.new" class="new"></span>
+                        </li>
+                    </ul>
+                    <ul v-if="product.right" class="right">
+                        <li class="right_lable category" v-if="product.right_label"><h3>{[ $t(product.right_label) ]}</h3></li>
+                        <li class="info_item" v-for="right in product.right">
+                            <a v-bind:href="$t(right.url)" v-new-tab="right.new_tab">
+                                <h3 class="title">{[ $t(right.name) ]}</h3>
+                                <span class="brief">{[ $t(right.brief) ]}</span>
+                            </a>
+                            <span v-if="typeof(right.new)=='string' && right.new != ''" class="new_with_info" v-on:click="newInfo"><span class="new_info">{[ right.new ]}</span></span>
+                            <span v-else-if="right.new" class="new"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div id="msg">
+        <div id="msg_mask" v-on:click="msgCLose"></div>
+        <div id="msg_close" v-on:click="msgCLose">x</div>
+        <div id="msg_content_wrapper">
+            <div id="msg_content"></div>
+        </div>
+    </div>
+</div>
+<script>
+    var pageLanguages = ["en", "zh"] // languages user can select in pages
+    ///////////////////// translate start /////////////////////
+    const messages = {
+        en: {
+            "Sipeed Wiki": "Sipeed Wiki - Documentation",
+            Hardware: "Hardware",
+            Software: "Software",
+
+            maix_title: "Maix AI",
+            maix_brief: "Edge AI so easy! Quickly deploy AI programs on various hardware platforms",
+            maix_i_brief: "MCU with AI computing power, extremely cost-effective",
+            maix_ii_brief: "With AI computing power SOC, can run Linux system",
+            maixpy_brief: "MicroPython develops embedded AI, simple and fast",
+            maixpy3_brief: "Python3 develops embedded AI, simple and fast, cross-platform",
+            maixpy_speech_brief: "Real-time speech recognition library designed for embedded, compact and high-precision, multi-platform support",
+            maix_i_url: "/hardware/zh/maix/index.html",
+            maix_ii_url: "/hardware/zh/maixII/index.html",
+            maixpy_url: "/soft/maixpy/en/index.html",
+            maixpy3_url: "/soft/maixpy3/zh/index.html",
+
+            maixhub_title: "Maixhub",
+            maixhub_brief: "Model online training, conversion, sharing, firmware online compile etc.",
+            maixhub_models: "Model center",
+            maixhub_models_brief: "Model download and sharing",
+            maixhub_train: "Train",
+            maixhub_train_brief: "Train the model online, just prepare the dataset",
+            maixhub_compile: "Firmware compilation",
+            maixhub_compile_brief: "Online customizing and compiling firmware",
+            maixhub_convert: "Model conversion",
+            maixhub_convert_brief: "Online conversion model",
+
+            licheepi_title: "Lichee Pi",
+            licheepi_brief: "Lichee Pi, a cost-effective and compact Linux SBC",
+            lichee_zero: "Lichee Zero",
+            lichee_zero_brief: "Cortex-A7 1GHz V3s Classic Mini Mainline Linux SBC",
+            lichee_nano: "Lichee Nano",
+            lichee_nano_brief: "ARM9 400MHz F1C100s Great value and super small mainline Linux SBC",
+            lichee_rv: "Lichee RV",
+            lichee_rv_brief: "XuanTie C906 1GHz D1 early adopters RISC-V Linux SBC",
+            lichee_zero_url: "/hardware/zh/lichee/Zero/Zero.html",
+            lichee_nano_url: "/hardware/zh/lichee/Nano/Nano.html",
+            lichee_rv_url: "/hardware/zh/lichee/RV/RV.html",
+
+            tang_title: "Tang",
+            tang_brief: "Exquisite FGPA development board",
+            tang_premier: "Tang Primer",
+            tang_premier_brief: "20K Lut Anlogic Classic RISC-V soft core FPGA verification board",
+            tang_nano: "Tang Nano 1K",
+            tang_nano_brief: "1K Lut Gowin Value entry FPGA development board",
+            tang_nano_4k: "Tang Nano 4K",
+            tang_nano_4k_brief: "4K Lut + CM3 hard core + PSRAM + HDMI Gowin, Great value, multi-function",
+            tang_nano_9k: "Tang Nano 9K",
+            tang_nano_9k_brief: "9K Lut+PSRAM+HDMI Gowin entry-level RISC-V soft core",
+            tang_premier_url: "/hardware/zh/tang/Tang-primer/Tang-primer.html",
+            tang_nano_url: "/hardware/zh/tang/Tang-Nano/Tang-Nano.html",
+            tang_nano_4k_url: "/hardware/zh/tang/Tang-Nano-4K/Nano-4K.html",
+            tang_nano_9k_url: "/hardware/en/tang/Tang-Nano-9K/Nano-9K.html",
+
+            longan_title: "Longan",
+            longan_brief: "Exquisite and small MCU Development Board",
+            longan_nano: "Longan Nano",
+            longan_nano_brief: "GD32VF103 classic RISC-V MCU Development Board for universal usage",
+            longan_nano_url: "/hardware/zh/longan/Nano/Longan_nano.html",
+
+            module_title: "Peripheral Module",
+            module_brief: "Let peripherals meet your various creativity",
+            module_spmod: "SP-MOD",
+            module_spmod_brief: "Sipeed universal 8Pin expansion module",
+            module_debuger: "Debuger",
+            module_debuger_brief: "Practical debugger, USB to serial port, RV debugger...",
+            module_spmod_url: "/hardware/zh/modules_spmod/spmod_extender.html",
+            module_debuger_url: "/hardware/en/",
+
+            community_title: "Community",
+            community_brief: "Active community, make open source better together, and be creators together",
+            community_github: "github",
+            community_github_brief: "Open source code organization, welcome to star projects you like, and contribute together",
+            community_bbs: "BBS",
+            community_bbs_brief: "Technical exchanges, project sharing, making technical friends ...",
+            community_twitter: "Twitter",
+            community_twitter_brief: "Blog and news ...",
+            community_more: "More",
+            community_more_brief: "Telegram、 QQ Group ..."
+        },
+        zh: {
+            "Sipeed Wiki": "Sipeed Wiki - 文档和资料",
+            Hardware: "硬件",
+            Software: "软件",
+
+            maix_title: "Maix AI",
+            maix_brief: "边缘 AI, 如此简单！快速地在各种硬件平台部署 AI 程序",
+            maix_i_brief: "带 AI 算力 MCU, 极致性价比",
+            maix_ii_brief: "带 AI 算力 SOC, 能跑 Linux 系统",
+            maixpy_brief: "MicroPython 开发嵌入式 AI， 简单快速",
+            maixpy3_brief: "Python3 开发嵌入式 AI， 简单快速跨平台",
+            maixpy_speech_brief: "为嵌入式设计的实时语音识别库，小巧且精度高，多平台支持",
+            maix_i_url: "/hardware/zh/maix/index.html",
+            maix_ii_url: "/hardware/zh/maixII/index.html",
+            maixpy_url: "/soft/maixpy/zh/index.html",
+            maixpy3_url: "/soft/maixpy3/zh/index.html",
+
+            maixhub_title: "Maixhub",
+            maixhub_brief: "模型在线训练、转换、分享，固件在线生成等",
+            maixhub_models: "模型中心",
+            maixhub_models_brief: "模型下载、分享",
+            maixhub_train: "训练",
+            maixhub_train_brief: "在线训练模型，只需准备好数据集即可",
+            maixhub_compile: "固件编译",
+            maixhub_compile_brief: "在线定制编译固件",
+            maixhub_convert: "模型转换",
+            maixhub_convert_brief: "在线转换模型",
+
+            licheepi_title: "Lichee Pi",
+            licheepi_brief: "荔枝派， 高性价比和小巧的 Linux SBC 开发板",
+            lichee_zero: "Lichee Zero",
+            lichee_zero_brief: "Cortex-A7 1GHz V3s 经典迷你 主线Linux SBC",
+            lichee_nano: "Lichee Nano",
+            lichee_nano_brief: "ARM9 400MHz F1C100s 超值超小 主线Linux SBC",
+            lichee_rv: "Lichee RV",
+            lichee_rv_brief: "玄铁C906 1GHz D1 入门尝鲜 RISC-V Linux SBC",
+            lichee_zero_url: "/hardware/zh/lichee/Zero/Zero.html",
+            lichee_nano_url: "/hardware/zh/lichee/Nano/Nano.html",
+            lichee_rv_url: "/hardware/zh/lichee/RV/RV.html",
+
+            tang_title: "Tang",
+            tang_brief: "精致 FGPA 开发板",
+            tang_premier: "Tang Primer",
+            tang_premier_brief: "20K Lut 安路 经典RISC-V软核 FPGA 验证板",
+            tang_nano: "Tang Nano 1K",
+            tang_nano_brief: "1K Lut 高云 超值入门型 FPGA开发板",
+            tang_nano_4k: "Tang Nano 4K",
+            tang_nano_4k_brief: "4K Lut+CM3硬核+PSRAM+HDMI 高云 超值多功能",
+            tang_nano_9k: "Tang Nano 9K",
+            tang_nano_9k_brief: "9K Lut+PSRAM+HDMI 高云 入门级 RISC-V 软核",
+            tang_premier_url: "/hardware/zh/tang/Tang-primer/Tang-primer.html",
+            tang_nano_url: "/hardware/zh/tang/Tang-Nano/Tang-Nano.html",
+            tang_nano_4k_url: "/hardware/zh/tang/Tang-Nano-4K/Nano-4K.html",
+            tang_nano_9k_url: "/hardware/zh/tang/Tang-Nano-9K/Nano-9K.html",
+
+            longan_title: "Longan",
+            longan_brief: "精致小巧的 MCU（单片机） 开发板",
+            longan_nano: "Longan Naono",
+            longan_nano_brief: "GD32VF103 经典 RISC-V 普及型单片机开发板",
+            longan_nano_url: "/hardware/zh/longan/Nano/Longan_nano.html",
+
+            module_title: "外设模块",
+            module_brief: "补充主控功能，无限创意，外设不能少",
+            module_spmod: "SP-MOD",
+            module_spmod_brief: "Sipeed 通用 8Pin 扩展模块",
+            module_debuger: "调试器",
+            module_debuger_brief: "实用调试器，USB 转串口、RV 调试器 ...",
+            module_spmod_url: "/hardware/zh/modules_spmod/spmod_extender.html",
+            module_debuger_url: "/hardware/zh/",
+
+            community_title: "社区",
+            community_brief: "活跃的社区，一起让开源变得更好，一起当创造者",
+            community_github: "github",
+            community_github_brief: "开源代码组织，欢迎 star 你喜欢的项目和参与贡献",
+            community_bbs: "BBS",
+            community_bbs_brief: "技术交流、项目分享、结交技术好友 ...",
+            community_more: "更多",
+            community_more_brief: "Twitter Telegram QQ群 ...",
+        }
+    }
+    ///////////////////// translate end /////////////////////
+    ///////////////////// config start /////////////////////
+    const products = [{
+        title: "maix_title",
+        brief: "maix_brief",
+        img: "/soft/maixpy3/zh/assets/images/load.gif",
+        video: "/hardware/zh/maixII/M2A/MaixSense/assets/M2A-1.mp4",
+        bg: "#dbdbdb",
+        left_label: "Hardware",
+        right_label: "Software",
+        left: [{
+                name: "Maix-I",
+                url: "maix_i_url",
+                brief: "maix_i_brief"
+            },
+            {
+                name: "Maix-II",
+                url: "maix_ii_url",
+                brief: "maix_ii_brief",
+                new: true
+            }
+        ],
+        right: [{
+                name: "MaixPy",
+                url: "maixpy_url",
+                brief: "maixpy_brief"
+            },{
+                name: "MaixPy3",
+                url: "maixpy3_url",
+                brief: "maixpy3_brief",
+                new: true
+            },{
+                name: "Maix-Speech",
+                url: "https://github.com/sipeed/Maix-Speech",
+                brief: "maixpy_speech_brief",
+                new_tab: true,
+                new: true
+            }
+        ]
+        },{
+        title: "maixhub_title",
+        brief: "maixhub_brief",
+        img: "/soft/maixpy3/zh/assets/images/main.png",
+        bg: "white",
+        left: [{
+                name: "maixhub_models",
+                url: "https://maixhub.com/",
+                brief: "maixhub_models_brief",
+                new_tab: true
+            },{
+                name: "maixhub_train",
+                url: "https://maixhub.com/ModelTraining",
+                brief: "maixhub_train_brief",
+                new_tab: true
+            },{
+                name: "maixhub_compile",
+                url: "https://maixhub.com/onlineCompiler",
+                brief: "maixhub_compile_brief",
+                new_tab: true
+            },{
+                name: "maixhub_convert",
+                url: "https://maixhub.com/modelConvert",
+                brief: "maixhub_convert_brief",
+                new_tab: true
+            }
+        ]
+        },{
+        title: "licheepi_title",
+        brief: "licheepi_brief",
+        img: "/static/image/licheeRV_dock.jpg",
+        bg: "#f5fbfb",
+        left: [{
+                name: "lichee_zero",
+                url: "lichee_zero_url",
+                brief: "lichee_zero_brief"
+            },{
+                name: "lichee_nano",
+                url: "lichee_nano_url",
+                brief: "lichee_nano_brief"
+            },{
+                name: "lichee_rv",
+                url: "lichee_rv_url",
+                brief: "lichee_rv_brief",
+                new: true
+            },
+        ]
+        },{
+        title: "tang_title",
+        brief: "tang_brief",
+        img: "/static/image/tang.jpg",
+        bg: "#fafafa",
+        left: [{
+                name: "tang_premier",
+                url: "tang_premier_url",
+                brief: "tang_premier_brief"
+            },{
+                name: "tang_nano",
+                url: "tang_nano_url",
+                brief: "tang_nano_brief"
+            },{
+                name: "tang_nano_4k",
+                url: "tang_nano_4k_url",
+                brief: "tang_nano_4k_brief",
+                new: true
+            },{
+                name: "tang_nano_9k",
+                url: "tang_nano_9k_url",
+                brief: "tang_nano_9k_brief",
+                new: true
+            }
+        ]
+        },{
+        title: "longan_title",
+        brief: "longan_brief",
+        img: "/static/image/longan.jpg",
+        left: [{
+                name: "longan_nano",
+                url: "longan_nano_url",
+                brief: "longan_nano_brief"
+            }
+        ]
+        },{
+        title: "module_title",
+        brief: "module_brief",
+        img: "/static/image/spmod.jpg",
+        left: [{
+                name: "module_spmod",
+                url: "module_spmod_url",
+                brief: "module_spmod_brief"
+            },{
+                name: "module_debuger",
+                url: "module_debuger_url",
+                brief: "module_debuger_brief"
+            },
+        ]
+        },{
+        title: "community_title",
+        brief: "community_brief",
+        img: "/static/image/community.jpg",
+        left: [{
+                name: "community_github",
+                url: "https://github.com/sipeed",
+                brief: "community_github_brief"
+            },{
+                name: "community_bbs",
+                url: "https://bbs.sipeed.com",
+                brief: "community_bbs_brief"
+            },{
+                name: "community_twitter",
+                url: "https://twitter.com/SipeedIO",
+                brief: "community_twitter_brief"
+            },{
+                name: "community_more",
+                url: "/community.html",
+                brief: "community_more_brief"
+            }
+        ]
+        }
+    ]
+    ///////////////////// config end /////////////////////
+
+    // get page locale
+    var locale = document.getElementsByTagName("html")[0].lang
+    if (locale){
+        locale = locale.toLowerCase().split("-")[0]
+    }
+    // get browser locale
+    var localeBrowser =(navigator.language || navigator.browserLanguage).toLowerCase().split("-")[0];
+    // brower locale not in page lanuage list, use browser locale
+    if (!localeBrowser in pageLanguages){
+        locale = localeBrowser
+    }
+    const i18n = VueI18n.createI18n({
+        locale: locale,
+        messages: messages,
+        fallbackLocale: "en",
+        silentFallbackWarn: true
+    })
+
+    function isLimitedNetwork(){
+        var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection || { tyep: 'unknown' };
+        const notLimitTypes = ["ethernet", "wifi", "wimax"]
+        const limitTypes = ["bluetooth", "cellular"]
+
+        var system = { 
+            win: false, 
+            mac: false, 
+            x11: false, 
+            ipad:false 
+        }; 
+        var p = navigator.platform;
+        system.win = p.indexOf("Win") == 0; 
+        system.mac = p.indexOf("Mac") == 0; 
+        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0); 
+        system.ipad = (navigator.userAgent.match(/iPad/i) != null)?true:false; 
+        if(notLimitTypes.indexOf(connection.type) >= 0){
+            return false
+        }
+        if((system.win || system.mac || system.x11 || system.ipad ) && (limitTypes.indexOf(connection.type)<0) ) {
+            return false
+        }
+        return true
+    }
+    function showNew(info){
+        var el = document.getElementById("msg_content")
+        el.innerHTML = info
+        el = document.getElementById("msg")
+        el.style.display = "block"
+    }
+    const allHandling = {
+        compilerOptions: {
+            delimiters:['{[', ']}'],
+        },
+        data(){
+            return {
+                products: products
+            }
+        },
+        mounted() {
+            var isWechat = window.WeixinJSBridge
+            if (!isWechat) {
+                document.addEventListener("WeixinJSBridgeReady", function () {
+                    var players_mask = document.getElementsByClassName("play_mask")
+                    for(var i=0; i < players_mask.length; ++i){
+                        players_mask[i].style.display = "block"
+                    }
+                }, false);
+            }
+            if(isLimitedNetwork() || isWechat){
+                var players_mask = document.getElementsByClassName("play_mask")
+                for(var i=0; i < players_mask.length; ++i){
+                    players_mask[i].style.display = "block"
+                }
+            }else{
+                var players = document.getElementsByClassName("video_player")
+                for(var i=0; i < players.length; ++i){
+                    players[i].play();
+                }
+            }
+        },
+        methods: {
+            playVideo(event) {
+                // remove play button and paly video
+                el = event.target
+                el.style.display="none"
+                player = el.parentElement.getElementsByTagName("video")[0]
+                player.play()
+            },
+            newInfo(event) {
+                el = event.target
+                info = el.getElementsByClassName("new_info")[0].innerText
+                if(info != "true" && info != "false" && info.trim() != ""){
+                    showNew(info)
+                }
+            },
+            msgCLose(event) {
+                console.log("close")
+                var el = document.getElementById("msg")
+                el.style.display = "none"
+            }
+        }
+    }
+    var app = Vue.createApp(allHandling)
+    app.use(i18n)
+    app.directive('new-tab', {
+        mounted(el, binding) {
+            if (binding.value){
+                el.setAttribute("target", "_blank")
+            }
+        }
+    })
+    var vm = app.mount('#products')
+</script>
+
+
+
+
+            </div>
+        </div>
+        <a id="to_top" href="#"></a>
+        <div id="page_footer">
+            <div id="footer">
+                
+                <div id="footer_top">
+                    <ul>
+<li><a>链接</a><ul><li><a target="_blank" href="https://www.sipeed.com">Sipeed</a></li>
+<li><a target="_blank" href="https://bbs.sipeed.com/">BBS 论坛</a></li>
+<li><a target="_blank" href="https://maixhub.sipeed.com/">Maixhub</a></li>
+<li><a target="_blank" href="https://sipeed.taobao.com/">Sipeed 淘宝</a></li>
+<li><a target="_blank" href="https://github.com/neutree/teedoc">网站使用 teedoc 生成</a></li>
+</ul>
+</li>
+<li><a>网站统计</a><ul><li><a target="_blank" href="https://tongji.baidu.com/web/welcome/ico?s=9cb07365544a53067c56c346c838181a">百度统计</a></li>
+<li><a  href="/sitemap.xml">网站地图</a></li>
+</ul>
+</li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/sipeed/sipeed_wiki">文档源文件</a></li>
+<li><a target="_blank" href="https://github.com/sipeed">开源项目源码</a></li>
+</ul>
+</li>
+<li><a>关注我们</a><ul><li><a target="_blank" href="https://github.com/sipeed">github</a></li>
+<li><a target="_blank" href="https://twitter.com/SipeedIO">twitter</a></li>
+<li><a target="_blank" href="https://sipeed.taobao.com/">淘宝</a></li>
+<li><a  href="/community.html">更多</a></li>
+</ul>
+</li>
+<li><a>联系我们</a><ul><li><a>电话: +86 0755-27808509</a>
+</li>
+<li><a>商业支持: support@sipeed.com</a>
+</li>
+<li><a>地址: 深圳市宝安区新湖路4008号蘅芳科技办公大厦A座-2101C</a>
+</li>
+<li><a  href="/join_us.html">加入我们</a></li>
+</ul>
+</li>
+</ul>
+
+                </div>
+                <div id="footer_bottom">
+                    <ul>
+<li><a target="_blank" href="https://www.sipeed.com">©2018-2021 深圳矽速科技有限公司</a></li>
+<li><a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">粤ICP备19015433号-1</a></li>
+</ul>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    
+        <script type="text/javascript">
+                var transLoaded = false;
+                var loading = false;
+                var domain = "/";
+                var domainDefault = domain;
+                var storeDomain = localStorage.getItem("googleTransDomain");
+                if(storeDomain){
+                    domain = storeDomain;
+                }
+                function getUrl(domain){
+                    if(domain == "/")
+                        return "/static/js/google_translate/element.js?cb=googleTranslateElementInit";
+                    else
+                        return "https://" + domain + "/translate_a/element.js?cb=googleTranslateElementInit";
+                }
+                var url = getUrl(domain);
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: "auto", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                }
+                function loadJS( url, callback ){
+                    var script = document.createElement('script');
+                    fn = callback || function(){ };
+                    script.type = 'text/javascript';
+                    if(script.readyState){
+                        script.onreadystatechange = function(){
+                            if( script.readyState == 'loaded' || script.readyState == 'complete' ){
+                                script.onreadystatechange = null;
+                                fn();
+                            }
+                        };
+                    }else{
+                        script.onload = function(){
+                            fn();
+                        };
+                    }
+                    script.src = url;
+                    document.getElementsByTagName('head')[0].appendChild(script);
+                }
+                function removeHint(){
+                    var hint = document.getElementById("loadingTranslate");
+                    if(hint){
+                        hint.remove();
+                    }
+                }
+                var btn = document.getElementById("google_translate_element");
+                btn.onclick = function(){
+                    if(transLoaded) return;
+                    if(loading){
+                        var flag = confirm("loading from " + domain + ", please wait, or change domain?");
+                        if(flag){
+                            newDomain = prompt("domain, default: " + domainDefault + ", now: " + domain);
+                            if(newDomain){
+                                domain = newDomain;
+                                console.log(domain);
+                                url = getUrl(domain);
+                                loadJS(url, function(){
+                                    localStorage.setItem("googleTransDomain", domain);
+                                    removeHint()
+                                    transLoaded = true;
+                                });
+                            }
+                        }
+                        return;
+                    }
+                    btn.innerHTML = '<span id="loadingTranslate"><img class="icon" src="/static/image/google_translate/translate.svg"/>Loading ...</span>';
+                    loading = true;
+                    loadJS(url, function(){
+                        localStorage.setItem("googleTransDomain", domain);
+                        removeHint()
+                        transLoaded = true;
+                    });
+                }
+                </script>
+            
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <link rel="stylesheet" href="/static/js/add_hint/style.css" type="text/css"/>
+    
+        <script src="/static/js/add_hint/main.js"></script>
+    
+        <script src="/static/js/gitalk/gitalk.min.js"></script>
+    
+        <script src="/static/js/gitalk/main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+    
+</body>
+</html>

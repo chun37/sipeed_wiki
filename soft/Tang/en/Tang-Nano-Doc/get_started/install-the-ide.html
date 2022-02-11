@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en"  class="" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+    <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+    
+    <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <meta name="html-generator" content="teedoc-plugin-jupyter-notebook-parser">
+    
+    <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+    
+    <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+    
+    <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+    
+    <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+    
+    <script src="/static/js/theme_default/split.js"></script>
+    
+    <script src="/static/js/theme_default/jquery.min.js"></script>
+    
+    <script src="/static/js/theme_default/pre_main.js"></script>
+    
+    <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+    
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9cb07365544a53067c56c346c838181a";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119047820-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', 'UA-119047820-5');
+    </script>
+    
+    <link rel="stylesheet" href="/static/css/gitalk/gitalk.css" type="text/css"/>
+    
+    <link rel="stylesheet" href="/static/css/gitalk/custom_gitalk.css" type="text/css"/>
+    
+    <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+    
+    <title>Download - Sipeed Wiki</title>
+    <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"bg_color": "#ffcf89", "bg_color_hover": "#f57c00", "close_color": "#eab971", "color": "#a0421d", "color_hover": "white", "content": "\u003ca target=\"_blank\" href=\"https://github.com/sipeed/Maix-Speech\"\u003eMaix-Speech\u003c/a\u003e ASR lib now is available, designed for embedded, light but high-precision, multi-platform support! Welcome to use and \u2606star", "date": "2021-11-19 14:00:00", "label": "New", "link_bg_color": "#e6ae5c", "link_color": "#e53935", "show_after_s": 432000, "show_times": 2, "type": "new"}}</script>
+</head>
+<body class="type_doc">
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/en/">
+                
+                    <img class="site_logo" src="/static/image/logo.svg" alt="sipeed wiki logo">
+                
+                
+                    <h2>wiki</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/en/">Home</a></li>
+<li class=""><a target="_blank" href="https://www.sipeed.com">Sipeed</a></li>
+<li class="sub_items active_parent"><a >software</a><ul><li class=""><a  href="/soft/maixpy/en/">Maixpy</a></li>
+<li class=""><a  href="/soft/maixpy3/zh/">Maixpy3</a></li>
+<li class=""><a  href="/soft/maixduino/zh/index.html">MaixDuino</a></li>
+<li class=""><a  href="/soft/Lichee/zh/">Lichee Pi</a></li>
+<li class="active"><a  href="/soft/Tang/en/">Tang</a></li>
+<li class=""><a  href="/soft/longan/en/">Longan</a></li>
+</ul>
+</li>
+<li class="sub_items "><a >Hardware</a><ul><li class=""><a  href="/hardware/en/maix/index.html">Maix-I</a></li>
+<li class=""><a  href="/hardware/en/maixII/index.html">Maix-II</a></li>
+<li class=""><a  href="/hardware/en/lichee/index.html">Lichee Pi</a></li>
+<li class=""><a  href="/hardware/en/tang/index.html">Tang</a></li>
+<li class=""><a  href="/hardware/en/longan/index.html">Longan</a></li>
+</ul>
+</li>
+<li class="sub_items "><a >Commercial products</a><ul><li class=""><a  href="/hardware/maixface/en/">Maix Face</a></li>
+</ul>
+</li>
+<li class="sub_items "><a >Platform</a><ul><li class=""><a target="_blank" href="https://www.maixhub.com">Maixhub model training platform</a></li>
+<li class=""><a target="_blank" href="https://www.maixhub.com/compile">Firmware online compile</a></li>
+</ul>
+</li>
+<li class=""><a  href="/en/community.html">Community</a></li>
+<li class=""><a  href="/en/store.html">Store</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+</ul>
+
+                <ul class="nav_plugins"><li><a id="google_translate_element"><img class="icon" src="/static/image/google_translate/translate.svg"/>Translate</a></li></ul><ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">Search</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">Keywords separated by space</span>
+                                <span id="search_loading_hint">Loading, wait please ...</span>
+                                <span id="search_download_err_hint">Download error, please check network and refresh again</span>
+                                <span id="search_other_docs_result_hint">Result from other docs</span>
+                                <span id="search_curr_doc_result_hint">Result from current doc</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active no_link sidebar_category"><span class="label">Tang</span></li>
+<li class="not_active no_link"><a><span class="label">Tang Primer</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/soft/Tang/en/index.html"><span class="label">Tang Primer</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">Getting Started</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/soft/Tang/en/content/getting-started/requirements.html"><span class="label">Requirements</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/soft/Tang/en/content/getting-started/installing-TD-IDE/linux.html"><span class="label">Installing Tang Dynasty IDE on Linux</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/soft/Tang/en/content/getting-started/installing-TD-IDE/windows.html"><span class="label">Installing Tang Dynasty IDE on Windows</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/soft/Tang/en/content/getting-started/installing-USB-Driver/linux.html"><span class="label">Installing USB Driver on Linux</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/soft/Tang/en/content/getting-started/installing-USB-Driver/windows.html"><span class="label">Installing USB Driver on Windows</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/soft/Tang/en/content/getting-started/Getting-to-Blinky/Getting-to-Blinky.html"><span class="label">Getting to Blinky</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Hardware Overview</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/soft/Tang/en/content/hardware-overview/lichee-tang.html"><span class="label">Tang Primer board</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/soft/Tang/en/content/hardware-overview/OV2640-camera.html"><span class="label">OV2640 Camera Module</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/soft/Tang/en/content/hardware-overview/LCD-display.html"><span class="label">LCD Display module</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/soft/Tang/en/no_translate.html?ref=content/hardware-overview/rV-debugger.html&from=/soft/Tang/en/content/hardware-overview/rV-debugger.html"><span class="label">RV Debugger</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Using Tang Perimer</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/soft/Tang/en/content/using-tang/using-gpio/using-gpio.html"><span class="label">Using Tang GPIO</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Working with RISC-V</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/soft/Tang/en/content/risc-v-core/hummingbird/_index.en.html"><span class="label">Hummingbrid Core</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Developer Guide</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/soft/Tang/en/content/dev-guide/using-yosys/_index.en.html"><span class="label">Using Yosys with Primer</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="active_parent no_link"><a><span class="label">Tang Nano</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active no_link"><a><span class="label">INTRODUCTION</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/soft/Tang/en/Tang-Nano-Doc/index.html"><span class="label">About Tang Nano</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="active_parent no_link"><a><span class="label">REDAY</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="active with_link"><a href="/soft/Tang/en/Tang-Nano-Doc/get_started/install-the-ide.html"><span class="label">IDE installation</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">EXAMPLE</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/soft/Tang/en/Tang-Nano-Doc/examples/1_led.html"><span class="label">Lighting tutorial</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/soft/Tang/en/Tang-Nano-Doc/examples/2_lcd.html"><span class="label">Point LCD tutorial</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            <h1>Download</h1>
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            <span class="article_date">
+                                
+                            </span>
+                        </div>
+                        <div id="article_info_right">
+                            
+                            <div id="source_link">
+                                <a href="https://github.com/sipeed/sipeed_wiki/blob/main/docs/soft/Tang/en/Tang-Nano-Doc/get_started/install-the-ide.md" target="_blank">
+                                    Edit this page
+                                </a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_content">
+                        <p>Go to the official website <a href="http://www.gowinsemi.com.cn/faq.aspx" target="_blank">http://www.gowinsemi.com.cn/faq.aspx</a>, you can see the software list below, select the version of the system suitable for the computer to download.</p>
+<p><img src="./../assets/gowin_down.png" alt="1-1"></p>
+<h1 id="Installation">Installation</h1>
+<p><strong>Windows</strong> User:</p>
+<p>Double-click the downloaded exe installation file, select the installation language, installation location, click the next step to complete the installation.</p>
+<p>Be sure to install the driver that prompts you to install when you complete the installation.</p>
+<p><img src="./../assets/gowin_install.png" alt="2-1"></p>
+<p>Check the installation driver and click Finish, the driver will be installed.</p>
+<p><strong>Linux</strong> User:</p>
+<p>TODO</p>
+<h1 id="license">license</h1>
+<p>There are currently two ways to license.</p>
+<p><strong>The first type: use the stand-alone version of the licence (need to apply for license)</strong></p>
+<p>Send an application email to <code>Support@sipeed.com</code> under the heading <code>[Apply Tang Lic] MAC: XXXXXX</code>. The content template is as follows</p>
+<pre><code>Company Name:
+Company Website:
+Department:
+Contact Person:
+Contact No.:
+Email:
+Media Access Control Address(MAC):
+Type of License: Shared Type, Local Only
+Operating System: Windows, Linux
+</code></pre>
+<p>When you open the High Cloud IDE, in the license management that pops up, select your local license path.</p>
+<p><img src="./../assets/lic_file_5.png" alt="3-5"></p>
+<p>Then you need to add the path of the license of synplifypro to the system variable. The following is a brief introduction to an add method. In <code>`The second: use the sipeed license server networking activation</code>, there is a more detailed introduction.</p>
+<p><strong>Windows</strong> User press win+r on the keyboard, enter <code>cmd</code> in the pop-up window, click OK to pop up the black command line window, enter the following command, <code>path_to_the_file</code> is your <code>gowin_Synplifypro.lic Path of</code>.</p>
+<pre><code>setx LM_LICENSE_FILE path_to_the_file
+</code></pre>
+<p><strong>Second: Network activation with license server using sipeed</strong></p>
+<p>This method is simple to configure, but you can't use the software without a network.</p>
+<p>After downloading the software, the software will prompt you for a licence. Fill in the server address <code>45.33.107.56</code> in the pop-up box, IDE port: 10559.</p>
+<p><img src="./../assets/lic_remote_1.png" alt="3-6"></p>
+<p>The activation of the synopsys advanced function requires adding the environment variable <code>LM_LICENSE_FILE=27020@45.33.107.56</code> to the system.</p>
+<p><strong>Windows</strong> User presses win+r on the keyboard, enter <code>cmd</code> in the pop-up window, click OK to pop up the black command line window, enter the following command.</p>
+<pre><code>setx LM_LICENSE_FILE 27020@45.33.107.56
+</code></pre>
+<p>Windows can be added in addition to the command line. You can also add it by right-clicking Computer-&gt;Properties-&gt;Environment Variables and then adding it as shown below.</p>
+<p><img src="./../assets/lic_remote_2.png" alt="3-7"></p>
+<p><strong>Linux</strong> users need to add in <code>~/.bashrc</code></p>
+<pre><code>Export LM_LICENSE_FILE 27020@45.33.107.56
+</code></pre>
+<p>After entering the IDE, click on <code>Synplify Pro</code> in Tools.</p>
+<p><img src="./../assets/lic_remote_3.png" alt="3-8"></p>
+<p>Then the interface will pop up as shown below. At this time, you need to wait for a short time. After the license is initialized, you can use it.</p>
+<p><img src="./../assets/lic_remote_4.png" alt="3-9"></p>
+<h1 id="Instructions">Instructions</h1>
+<p>Refer to the official documentation [Gowin Source Software User Guide] (<a href="http://cdn.gowinsemi.com.cn/SUG100-1.8_Gowin%E4%BA%91%E6%BA%90%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97.pdf" target="_blank">http://cdn.gowinsemi.com.cn/SUG100-1.8_Gowin%E4%BA%91%E6%BA%90%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97.pdf</a>), Chapter 5 Cloud Source Software Usage.</p>
+<h1 id="Reference-document">Reference document</h1>
+<ul>
+<li><a href="http://cdn.gowinsemi.com.cn/%E9%AB%98%E4%BA%91%E8%BD%AF%E4%BB%B6%E7%AE%80%E4%BB%8B%E5%92%8C%E5%AE%89%E8%A3%85.pdf"  target="_blank">Gowin Software Introduction and Installation</a></li>
+</ul>
+
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/soft/Tang/en/Tang-Nano-Doc/index.html">
+                            <span class="icon"></span>
+                            <span class="label">About Tang Nano</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/soft/Tang/en/Tang-Nano-Doc/examples/1_led.html">
+                            <span class="label">Lighting tutorial</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc">
+                <div id="toc_content">
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>Links</a><ul><li><a target="_blank" href="https://www.sipeed.com">Sipeed</a></li>
+<li><a target="_blank" href="https://bbs.sipeed.com/">BBS</a></li>
+<li><a target="_blank" href="https://maixhub.sipeed.com/">Maixhub</a></li>
+<li><a target="_blank" href="https://sipeed.taobao.com/">Sipeed Taobao</a></li>
+<li><a target="_blank" href="https://github.com/neutree/teedoc">Site generated by teedoc</a></li>
+</ul>
+</li>
+<li><a>Site and analytics</a><ul><li><a target="_blank" href="https://tongji.baidu.com/web/welcome/ico?s=9cb07365544a53067c56c346c838181a">Baidu analytics</a></li>
+<li><a  href="/sitemap.xml">Sitemap</a></li>
+</ul>
+</li>
+<li><a>Source code</a><ul><li><a target="_blank" href="https://github.com/sipeed/sipeed_wiki">Wiki source code</a></li>
+<li><a target="_blank" href="https://github.com/sipeed">Open source projects</a></li>
+</ul>
+</li>
+<li><a>Fllow us</a><ul><li><a target="_blank" href="https://github.com/sipeed">github</a></li>
+<li><a target="_blank" href="https://twitter.com/SipeedIO">twitter</a></li>
+<li><a target="_blank" href="https://sipeed.taobao.com/">Taobao store</a></li>
+<li><a  href="/social_group.html">More</a></li>
+</ul>
+</li>
+<li><a>Contact</a><ul><li><a>Phone: +86 0755-27808509</a>
+</li>
+<li><a>Commercial support: support@sipeed.com</a>
+</li>
+<li><a>Address: 深圳市宝安区新湖路4008号蘅芳科技办公大厦A座-2101C</a>
+</li>
+<li><a  href="/join_us.html">Join us</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a target="_blank" href="https://www.sipeed.com">©2018-2021 Sipeed Ltd</a></li>
+<li><a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">粤ICP备19015433号-1</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script type="text/javascript">
+                var transLoaded = false;
+                var loading = false;
+                var domain = "/";
+                var domainDefault = domain;
+                var storeDomain = localStorage.getItem("googleTransDomain");
+                if(storeDomain){
+                    domain = storeDomain;
+                }
+                function getUrl(domain){
+                    if(domain == "/")
+                        return "/static/js/google_translate/element.js?cb=googleTranslateElementInit";
+                    else
+                        return "https://" + domain + "/translate_a/element.js?cb=googleTranslateElementInit";
+                }
+                var url = getUrl(domain);
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: "auto", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                }
+                function loadJS( url, callback ){
+                    var script = document.createElement('script');
+                    fn = callback || function(){ };
+                    script.type = 'text/javascript';
+                    if(script.readyState){
+                        script.onreadystatechange = function(){
+                            if( script.readyState == 'loaded' || script.readyState == 'complete' ){
+                                script.onreadystatechange = null;
+                                fn();
+                            }
+                        };
+                    }else{
+                        script.onload = function(){
+                            fn();
+                        };
+                    }
+                    script.src = url;
+                    document.getElementsByTagName('head')[0].appendChild(script);
+                }
+                function removeHint(){
+                    var hint = document.getElementById("loadingTranslate");
+                    if(hint){
+                        hint.remove();
+                    }
+                }
+                var btn = document.getElementById("google_translate_element");
+                btn.onclick = function(){
+                    if(transLoaded) return;
+                    if(loading){
+                        var flag = confirm("loading from " + domain + ", please wait, or change domain?");
+                        if(flag){
+                            newDomain = prompt("domain, default: " + domainDefault + ", now: " + domain);
+                            if(newDomain){
+                                domain = newDomain;
+                                console.log(domain);
+                                url = getUrl(domain);
+                                loadJS(url, function(){
+                                    localStorage.setItem("googleTransDomain", domain);
+                                    removeHint()
+                                    transLoaded = true;
+                                });
+                            }
+                        }
+                        return;
+                    }
+                    btn.innerHTML = '<span id="loadingTranslate"><img class="icon" src="/static/image/google_translate/translate.svg"/>Loading ...</span>';
+                    loading = true;
+                    loadJS(url, function(){
+                        localStorage.setItem("googleTransDomain", domain);
+                        removeHint()
+                        transLoaded = true;
+                    });
+                }
+                </script>
+            
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <link rel="stylesheet" href="/static/js/add_hint/style.css" type="text/css"/>
+    
+        <script src="/static/js/add_hint/main.js"></script>
+    
+        <script src="/static/js/gitalk/gitalk.min.js"></script>
+    
+        <script src="/static/js/gitalk/main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+</body>
+</html>
