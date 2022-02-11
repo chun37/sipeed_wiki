@@ -238,3 +238,7 @@ print(sd_check())
 
 ## 在MaixPyIDE上运行boot.py文件时，卡死，没有显示，没有报错
 如果你的模型是烧录到flash上，你需要在串口终端上运行boot.py里面的代码，输出一段红色的报错信息为`Out of memory`，这时你需要将模型放到sd上，然后再进行读取（一定要可以挂载的sd卡，否则都是白干）
+
+## ValueError: [MAIXPY]kpu: load error:2006, ERR_ NO_ MEM: memory not enough
+
+同上 Out of memory ，请使用更小的固件获得更多的运行内存，标准固件大于 2m 剩余 1m 多，同理选用 600kb 可以获得 3m 多的运行内存，查看剩余运行内存看 [demo_view_mem.py](https://github.com/sipeed/MaixPy_scripts/blob/master/basic/demo_view_mem.py)。
