@@ -43,21 +43,40 @@
                 {
                     "url": "/hardware/en/",
                     "src": "docs/hardware/en"
+                },
+                {
+                    "url": "/hardware/ja/",
+                    "src": "docs/hardware/ja"
                 }
             ],
-            "/soft/longan/zh/": [{
+            "/soft/longan/zh/": [
+                {
                     "url": "/soft/longan/en/",
                     "src": "docs/soft/longan/en"
+                },
+                {
+                    "url": "/soft/longan/ja/",
+                    "src": "docs/soft/longan/ja"
                 }
             ],
-            "/hardware/maixface/zh/": [{
+            "/hardware/maixface/zh/": [
+                {
                     "url": "/hardware/maixface/en/",
                     "src": "docs/hardware/maixface/en"
+                },
+                {
+                    "url": "/hardware/maixface/ja/",
+                    "src": "docs/hardware/maixface/ja"
                 }
             ],
-            "/soft/maixpy/zh/": [{
+            "/soft/maixpy/zh/": [
+                {
                     "url": "/soft/maixpy/en/",
                     "src" : "docs/soft/maixpy/en"
+                },
+                {
+                    "url": "/soft/maixpy/ja/",
+                    "src" : "docs/soft/maixpy/ja"
                 }
             ]
         },
@@ -66,6 +85,10 @@
                 {
                     "url": "/en/",
                     "src": "pages/index/en"
+                },
+                {
+                    "url": "/ja/",
+                    "src": "pages/index/ja"
                 }
             ]
         }
